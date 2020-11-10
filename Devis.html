@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+	<!-- Stylesheets
+	============================================= -->
+
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/colors.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+
+	<!-- Date & Time Picker CSS -->
+	<link rel="stylesheet" href="css/components/datepicker.css" type="text/css" />
+	<link rel="stylesheet" href="css/components/timepicker.css" type="text/css" />
+	<link rel="stylesheet" href="css/components/daterangepicker.css" type="text/css" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Devis | HighSpeed</title>
+
+	<style>
+		.revo-slider-emphasis-text {
+			font-size: 64px;
+			font-weight: 700;
+			letter-spacing: -1px;
+			font-family: 'Poppins', sans-serif;
+			padding: 15px 20px;
+			border-top: 2px solid #FFF;
+			border-bottom: 2px solid #FFF;
+		}
+
+		.revo-slider-desc-text {
+			font-size: 20px;
+			font-family: 'Lato', sans-serif;
+			width: 650px;
+			text-align: center;
+			line-height: 1.5;
+		}
+
+		.revo-slider-caps-text {
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 3px;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		.tp-video-play-button {
+			display: none !important;
+		}
+
+		.tp-caption {
+			white-space: nowrap;
+		}
+	</style>
+</head>
+
+<body class="stretched">
+	<div id="wrapper" class="clearfix">
+		<!-- Header
+		============================================= -->
+		<header id="header" class="header-size-sm">
+			<div class="container">
+				<div class="header-row flex-column flex-lg-row justify-content-center justify-content-lg-start">
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo" class="mr-0 mr-lg-auto">
+						<a href="Accueil.html" class="standard-logo" data-dark-logo="Imgs/Logo/HighSpeed.png"><img
+								src="Imgs/Logo/HighSpeed.png" alt="Highspeed Logo"></a>
+					</div><!-- #logo end -->
+
+					<div class="header-misc mb-4 mb-lg-0 order-lg-last">
+
+						<ul class="header-extras mr-0 mr-sm-4">
+							<li>
+								<i class="i-plain icon-email3 m-0"></i>
+								<div class="he-text">
+									Email
+									<span>info@canvas.com</span>
+								</div>
+							</li>
+							<li>
+								<i class="i-plain icon-call m-0"></i>
+								<div class="he-text">
+									Contactez-nous
+									<span>1800-1144-551</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="header-wrap" class="border-top border-f5">
+				<div class="container">
+					<div class="header-row justify-content-between flex-row-reverse flex-lg-row">
+
+
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100">
+								<path
+									d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
+								</path>
+								<path d="m 30,50 h 40"></path>
+								<path
+									d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
+								</path>
+							</svg>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+							<ul class="menu-container">
+								<li class="menu-item">
+									<a class="menu-link" href="Accueil.html">
+										<div>Accueil</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="Qui_Somme_Nous.html">
+										<div>Qui sommes-nous</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="Services.html">
+										<div>Services</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="Equipement.html">
+										<div>Équipement</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="Devis.html">
+										<div>Devis</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="Contact.html">
+										<div>Contact</div>
+									</a>
+								</li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title" class="page-title-parallax page-title-dark skrollable skrollable-between"
+			style="background-image: url(&quot;Imgs/TruckDevis.jpg&quot;); background-size: cover; padding: 120px 0px; background-position: 0px -152.625px;"
+			data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
+
+			<div class="container clearfix">
+				<h1>Devis</h1>
+				<span>HighSpeed société de transport de marchandises, étudie tous vos besoins.</span>
+			</div>
+
+		</section>
+		<!-- #page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap" style="padding-top: 0;">
+				<div class="container" style="margin-top: 70px;">
+					<div class="card my-5 shadow-sm">
+						<div class="card-body p-5">
+							<div class="row gutter-40 col-mb-80">
+								<!-- Postcontent
+						============================================= -->
+								<div class="postcontent col-lg-12">
+
+
+									<div class="form-widget">
+
+										<div class="form-result"></div>
+
+										<form class="mb-0" id="template-contactform" name="template-contactform"
+											action="include/form.php" method="post">
+
+											<div class="form-process">
+												<div class="css3-spinner">
+													<div class="css3-spinner-scaler"></div>
+												</div>
+											</div>
+											<div class="fancy-title title-border title-center">
+												<h1>VOS COORDONNEES
+												</h1>
+											</div>
+											<div class="row" style="margin-bottom: 70px;">
+
+												<div class="col-md-3 form-group">
+													<label for="template-contactform-name">Societe
+														<small>*</small></label>
+													<input type="text" id="template-contactform-name"
+														name="template-contactform-name" value=""
+														class="sm-form-control required" />
+												</div>
+
+												<div class="col-md-3 form-group">
+													<label for="template-contactform-email">Interlocuteur
+														<small>*</small></label>
+													<input type="text" id="template-contactform-email"
+														name="template-contactform-email" value=""
+														class="required email sm-form-control" />
+												</div>
+
+												<div class="col-md-3 form-group">
+													<label for="template-contactform-phone">Adresse</label>
+													<input type="text" id="template-contactform-phone"
+														name="template-contactform-phone" value=""
+														class="sm-form-control" />
+												</div>
+
+												<div class="col-md-3 form-group">
+													<label for="template-contactform-VilleC">Ville
+														<small>*</small></label>
+													<input type="text" id="template-contactform-VilleC"
+														name="template-contactform-VilleC" value=""
+														class="sm-form-control required" />
+												</div>
+
+												<div class="col-md-3 form-group">
+													<label for="template-contactform-PaysC">Pays
+														<small>*</small></label>
+													<input type="text" id="template-contactform-PaysC"
+														name="template-contactform-PaysC" value=""
+														class="required email sm-form-control" />
+												</div>
+
+												<div class="col-md-3 form-group">
+													<label for="template-contactform-mailC">E-mail</label>
+													<input type="email" id="template-contactform-mailC"
+														name="template-contactform-mailC" value=""
+														class="sm-form-control" />
+												</div>
+
+												<div class="col-md-3 form-group">
+													<label for="template-contactform-phoneC">Téléphone
+														<small>*</small></label>
+													<input type="text" id="template-contactform-phoneC"
+														name="template-contactform-phoneC" value=""
+														class="sm-form-control required" />
+												</div>
+
+												<div class="col-md-3 form-group">
+													<label for="template-contactform-FaxC">Fax <small>*</small></label>
+													<input type="text" id="template-contactform-FaxC"
+														name="template-contactform-FaxC" value=""
+														class="required email sm-form-control" />
+												</div>
+
+											</div>
+
+											<div class="fancy-title title-border title-center">
+												<h1>VOTRE TRANSPORT
+												</h1>
+											</div>
+
+											<div class="row" style="margin-bottom: 70px;">
+												<div class="row col-md-6">
+													<div class="fancy-title title-bottom-border col-md-12">
+														<h4>DEPART</h4>
+													</div>
+	
+													<div class="col-md-6 form-group">
+														<label for="template-contactform-DateD">Date prévue
+															<small>*</small></label>
+														<div class="input-group">
+															<input type="text" value="" id="template-contactform-DateD"
+																class="form-control text-left component-datepicker past-enabled"
+																placeholder="MM/DD/YYYY">
+															<div class="input-group-append">
+																<div class="input-group-text"><i class="icon-calendar2"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+	
+	
+													<div class="col-md-6 form-group">
+														<label for="template-contactform-CodeD">Code postal
+															<small>*</small></label>
+														<input type="text" id="template-contactform-CodeD"
+															name="template-contactform-CodeD" value=""
+															class="required sm-form-control" />
+													</div>
+	
+													<div class="col-md-6 form-group">
+														<label for="template-contactform-VilleD">Ville
+															<small>*</small></label>
+														<input type="text" id="template-contactform-VilleD"
+															name="template-contactform-VilleD" value=""
+															class="required sm-form-control" />
+													</div>
+	
+													<div class="col-md-6 form-group">
+														<label for="template-contactform-PaysD">Pays
+															<small>*</small></label>
+														<input type="text" id="template-contactform-PaysD"
+															name="template-contactform-PaysD" value=""
+															class="required sm-form-control" />
+													</div>
+												</div>
+												<div class="col-md-6 row">
+													<div class="fancy-title title-bottom-border col-md-12">
+														<h4>ARRIVEE</h4>
+													</div>
+													<div class="col-md-6 form-group">
+														<label for="template-contactform-DateA">Date prévue
+															<small>*</small></label>
+														<div class="input-group">
+															<input type="text" value="" id="template-contactform-DateA"
+																class="form-control text-left component-datepicker past-enabled"
+																placeholder="MM/DD/YYYY">
+															<div class="input-group-append">
+																<div class="input-group-text"><i class="icon-calendar2"></i>
+																</div>
+															</div>
+														</div>
+													</div>
+	
+	
+													<div class="col-md-6 form-group">
+														<label for="template-contactform-CodeA">Code postal
+															<small>*</small></label>
+														<input type="text" id="template-contactform-CodeA"
+															name="template-contactform-CodeA" value=""
+															class="required sm-form-control" />
+													</div>
+	
+													<div class="col-md-6 form-group">
+														<label for="template-contactform-villeA">Ville
+															<small>*</small></label>
+														<input type="text" id="template-contactform-villeA"
+															name="template-contactform-villeA" value=""
+															class="required  sm-form-control" />
+													</div>
+	
+													<div class="col-md-6 form-group">
+														<label for="template-contactform-PaysA">Pays
+															<small>*</small></label>
+														<input type="text" id="template-contactform-PaysA"
+															name="template-contactform-PaysA" value=""
+															class="required sm-form-control" />
+													</div>
+												</div>
+												</div>
+
+
+											</div>
+											<div class="fancy-title title-border title-center">
+												<h1>VOTRE MARCHANDISE
+												</h1>
+											</div>
+											<div class="row">
+												<div class="col-md-4 form-group">
+													<label for="MDT">MODE DE TRANSPORT:</label>
+													<select class="form-control required valid"
+														name="jobs-application-type" id="MDT">
+														<option value="">-- Select One --</option>
+														<option value="Part-Time">Part-Time</option>
+														<option value="Full-Time">Full-Time</option>
+														<option value="Internship">Internship</option>
+														<option value="Freelance">Freelance</option>
+													</select>
+												</div>
+												<div class="col-md-4 form-group">
+													<label>Assurance:</label>
+													<div class="btn-group btn-group-toggle d-flex"
+														data-toggle="buttons">
+														<label class="btn btn-outline-success ls0 nott active">
+															<input type="radio" name="jobs-application-gender"
+																id="jobs-application-gender-male" autocomplete="off"
+																value="Male" class="valid"> Oui
+														</label>
+														<label class="btn btn-outline-danger ls0 nott">
+															<input type="radio" name="jobs-application-gender"
+																id="jobs-application-gender-female" autocomplete="off"
+																value="Female" class="valid"> Non
+														</label>
+													</div>
+													<!-- <select class="form-control" name="jobs-application-gender" id="jobs-application-gender">
+													<option value="">-- Select One --</option>
+													<option value="Male">Male</option>
+													<option value="Female">Female</option>
+												</select> -->
+												</div>
+
+												<div class="col-md-4 form-group">
+													<label>NATURE DU PRODUIT :Dangereux</label>
+													<div class="btn-group btn-group-toggle d-flex"
+														data-toggle="buttons">
+														<label class="btn btn-outline-success ls0 nott active">
+															<input type="radio" name="jobs-application-gender"
+																id="jobs-application-gender-male" autocomplete="off"
+																value="Male" class="valid"> Oui
+														</label>
+														<label class="btn btn-outline-danger ls0 nott">
+															<input type="radio" name="jobs-application-gender"
+																id="jobs-application-gender-female" autocomplete="off"
+																value="Female" class="valid"> Non
+														</label>
+													</div>
+													<!-- <select class="form-control" name="jobs-application-gender" id="jobs-application-gender">
+													<option value="">-- Select One --</option>
+													<option value="Male">Male</option>
+													<option value="Female">Female</option>
+												</select> -->
+												</div>
+
+												<div class="col-md-4 form-group">
+													<label for="template-contactform-VOLUME">VOLUME
+														<small>*</small></label>
+													<input type="text" id="template-contactform-VOLUME"
+														name="template-contactform-VOLUME" value=""
+														class="required sm-form-control" placeholder="m3" />
+												</div>
+												<div class="col-md-4 form-group">
+													<label for="template-contactform-POIDS">POIDS
+														<small>*</small></label>
+													<input type="text" id="template-contactform-POIDS"
+														name="template-contactform-POIDS" value=""
+														class="required sm-form-control" placeholder="Kg" />
+												</div>
+												<div class="col-md-4 form-group">
+													<label for="template-contactform-VDM">VALEUR DE LA MARCHANDISE
+														<small>*</small></label>
+													<input type="text" id="template-contactform-VDM"
+														name="template-contactform-VDM" value=""
+														class="required sm-form-control" placeholder="Dhs" />
+												</div>
+
+
+												<div class="w-100"></div>
+
+												<div class="col-12 form-group">
+													<label for="template-contactform-Comment">Vos commentaires
+														<small>*</small></label>
+													<textarea class="required sm-form-control"
+														id="template-contactform-Comment"
+														name="template-contactform-Comment" rows="6"
+														cols="30"></textarea>
+												</div>
+
+												<div class="col-12 form-group d-none">
+													<input type="text" id="template-contactform-botcheck"
+														name="template-contactform-botcheck" value=""
+														class="sm-form-control" />
+												</div>
+
+												<div class="col-12 form-group">
+													<button class="button button-3d m-0 float-right" type="submit"
+														id="template-contactform-submit"
+														name="template-contactform-submit"
+														value="submit">Envoyer</button>
+												</div>
+											</div>
+
+											<input type="hidden" name="prefix" value="template-contactform-">
+
+										</form>
+									</div>
+
+								</div><!-- .postcontent end -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- #content end -->
+
+
+
+		<div class="promo promo-dark promo-uppercase p-2 p-md-3">
+			<div class="row align-items-center">
+				<div class="col-lg-6" style="text-align: center;">
+					<h3>N'ATTENDS PLUS, demander un devis MAINTENANT!</h3>
+				</div>
+				<div class="col-lg-6 mt-4 mt-lg-0" style="text-align: center;">
+					<a href="#" class="btn btn-lg btn-outline-danger m-0"><span>demander un devis</span> </a>
+				</div>
+			</div>
+		</div>
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap">
+
+					<div class="row col-mb-50">
+						<div class="col-lg-8">
+
+							<div class="row col-mb-50">
+								<div class="col-md-6">
+
+									<div class="widget clearfix">
+
+										<h4>A propos de nous</h4>
+
+										<p>HighSpeed est une société de transport de marchandises.</p>
+
+										<div
+											style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+											<address>
+												<strong>Nous sommes ici !</strong><br>
+												795 Folsom Ave, Suite 600<br>
+												San Francisco, CA 94107<br>
+											</address>
+											<abbr title="Phone Number"><strong>Téléphone:</strong></abbr> (1) 8547
+											632521<br>
+											<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="col-md-6">
+
+									<div class="widget clearfix">
+										<h4>Nos services</h4>
+
+										<div class="posts-sm row col-mb-30" id="post-list-footer">
+											<div class="entry col-12">
+												<div class="grid-inner row">
+													<div class="col">
+														<div class="entry-title">
+															<h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a>
+															</h4>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+											<div class="entry col-12">
+												<div class="grid-inner row">
+													<div class="col">
+														<div class="entry-title">
+															<h4><a href="#">Elit Assumenda vel amet dolorum quasi</a>
+															</h4>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+											<div class="entry col-12">
+												<div class="grid-inner row">
+													<div class="col">
+														<div class="entry-title">
+															<h4><a href="#">Debitis nihil placeat, illum est nisi</a>
+															</h4>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+
+							</div>
+
+						</div>
+
+						<div class="col-lg-4">
+
+							<div class="row col-mb-50">
+								<div class="col-md-4 col-lg-12">
+									<div class="widget clearfix" style="margin-bottom: -20px;">
+
+										<div class="row">
+											<div class="col-lg-6 bottommargin-sm">
+												<div class="counter counter-small"><span data-from="50"
+														data-to="20105831" data-refresh-interval="80" data-speed="3000"
+														data-comma="true"></span></div>
+												<h5 class="mb-0">KM/an</h5>
+											</div>
+
+											<div class="col-lg-6 bottommargin-sm">
+												<div class="counter counter-small"><span data-from="0" data-to="387"
+														data-refresh-interval="50" data-speed="2000"
+														data-comma="true"></span></div>
+												<h5 class="mb-0">CLIENTS SATISFAITS</h5>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+
+								<div class="col-md-3 col-lg-12">
+									<div class="widget clearfix" style="margin-bottom: -20px;">
+
+										<div class="row">
+											<div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">
+												<a href="#" class="social-icon si-dark si-colored si-facebook mb-0"
+													style="margin-right: 10px;">
+													<i class="icon-facebook"></i>
+													<i class="icon-facebook"></i>
+												</a>
+												<a href="#"><small
+														style="display: block; margin-top: 3px;"><strong>Aimez-nous</strong><br>sur
+														Facebook</small></a>
+											</div>
+											<div class="col-6 col-md-12 col-lg-6 clearfix">
+												<a href="#" class="social-icon si-dark si-colored si-youtube mb-0"
+													style="margin-right: 10px;">
+													<i class="icon-line-youtube"></i>
+													<i class="icon-line-youtube"></i>
+												</a>
+												<a href="#"><small
+														style="display: block; margin-top: 3px;"><strong>abonné</strong><br>à
+														notre chaîne</small></a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+				<div class="container">
+
+					<div class="row col-mb-30">
+
+						<div class="col-md-6 text-center text-md-left">
+							Copyrights &copy; 2020 HighSpeed Tous droits réservés.<br>
+							Créé par WebsitesTanger.
+						</div>
+
+						<div class="col-md-6 text-center text-md-right">
+							<div class="d-flex justify-content-center justify-content-md-end">
+								<a href="#" class="social-icon si-small si-borderless si-facebook">
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-borderless si-youtube">
+									<i class="icon-line-youtube"></i>
+									<i class="icon-line-youtube"></i>
+								</a>
+
+								<a href="#" class="social-icon si-small si-borderless si-linkedin">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+							</div>
+
+							<div class="clear"></div>
+
+							<i class="icon-envelope2"></i> info@canvas.com <span class="middot">&middot;</span> <i
+								class="icon-headphones"></i> +1-11-6541-6369 <span class="middot">&middot;</span>
+						</div>
+
+					</div>
+
+				</div>
+			</div><!-- #copyrights end -->
+		</footer><!-- #footer end -->
+
+	</div>
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+	<!-- Date & Time Picker JS -->
+	<script src="js/components/moment.js"></script>
+	<script src="js/components/timepicker.js"></script>
+	<script src="js/components/datepicker.js"></script>
+
+	<!-- Include Date Range Picker -->
+	<script src="js/components/daterangepicker.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+
+	<script>
+		$(function () {
+			$('.component-datepicker.default').datepicker({
+				autoclose: true,
+				startDate: "today",
+			});
+
+			$('.component-datepicker.today').datepicker({
+				autoclose: true,
+				startDate: "today",
+				todayHighlight: true
+			});
+
+			$('.component-datepicker.past-enabled').datepicker({
+				autoclose: true,
+			});
+
+			$('.component-datepicker.format').datepicker({
+				autoclose: true,
+				format: "dd-mm-yyyy",
+			});
+
+			$('.component-datepicker.autoclose').datepicker();
+
+			$('.component-datepicker.disabled-week').datepicker({
+				autoclose: true,
+				daysOfWeekDisabled: "0"
+			});
+
+			$('.component-datepicker.highlighted-week').datepicker({
+				autoclose: true,
+				daysOfWeekHighlighted: "0"
+			});
+
+			$('.component-datepicker.mnth').datepicker({
+				autoclose: true,
+				minViewMode: 1,
+				format: "mm/yy"
+			});
+
+			$('.component-datepicker.multidate').datepicker({
+				multidate: true,
+				multidateSeparator: " , "
+			});
+
+			$('.component-datepicker.input-daterange').datepicker({
+				autoclose: true
+			});
+
+			$('.component-datepicker.inline-calendar').datepicker();
+
+			$('.datetimepicker').datetimepicker({
+				showClose: true
+			});
+
+			$('.datetimepicker1').datetimepicker({
+				format: 'LT',
+				showClose: true
+			});
+
+			$('.datetimepicker2').datetimepicker({
+				inline: true,
+				sideBySide: true
+			});
+
+			$('.datetimepicker3,.datetimepicker4').datetimepicker();
+
+			// .daterange1
+			$(".daterange1").daterangepicker({
+				"buttonClasses": "button button-rounded button-mini m-0",
+				"applyClass": "button-color",
+				"cancelClass": "button-light"
+			});
+
+			// .daterange2
+			$(".daterange2").daterangepicker({
+				"opens": "center",
+				timePicker: true,
+				timePickerIncrement: 30,
+				locale: {
+					format: 'MM/DD/YYYY h:mm A'
+				},
+				"buttonClasses": "button button-rounded button-mini m-0",
+				"applyClass": "button-color",
+				"cancelClass": "button-light"
+			});
+
+			// .daterange3
+			$(".daterange3").daterangepicker({
+				singleDatePicker: true,
+				showDropdowns: true
+			},
+				function (start, end, label) {
+					var years = moment().diff(start, 'years');
+					alert("You are " + years + " years old.");
+				});
+
+			// reportrange
+			function cb(start, end) {
+				$(".reportrange span").html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+			}
+			cb(moment().subtract(29, 'days'), moment());
+
+			$(".reportrange").daterangepicker({
+				"buttonClasses": "button button-rounded button-mini m-0",
+				"applyClass": "button-color",
+				"cancelClass": "button-light",
+				ranges: {
+					'Today': [moment(), moment()],
+					'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+					'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+					'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+					'This Month': [moment().startOf('month'), moment().endOf('month')],
+					'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+				}
+			}, cb);
+
+			// .daterange4
+			$(".daterange4").daterangepicker({
+				autoUpdateInput: false,
+				locale: {
+					cancelLabel: 'Clear'
+				},
+				"buttonClasses": "button button-rounded button-mini m-0",
+				"applyClass": "button-color",
+				"cancelClass": "button-light"
+			});
+
+			$(".daterange4").on('apply.daterangepicker', function (ev, picker) {
+				$(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+			});
+
+			$(".daterange4").on('cancel.daterangepicker', function (ev, picker) {
+				$(this).val('');
+			});
+
+		});
+
+	</script>
+</body>
+
+</html>

@@ -16,16 +16,12 @@
 	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="css/colors.css" type="text/css" />
 	<link rel="stylesheet" href="css/custom.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
-	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
-	<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
 
 	<!-- Document Title
 	============================================= -->
@@ -79,7 +75,7 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo" class="mr-0 mr-lg-auto">
-						<a href="index.html" class="standard-logo" data-dark-logo="Imgs/Logo/HighSpeed.png"><img
+						<a href="Accueil.html" class="standard-logo" data-dark-logo="Imgs/Logo/HighSpeed.png"><img
 								src="Imgs/Logo/HighSpeed.png" alt="Highspeed Logo"></a>
 					</div><!-- #logo end -->
 
@@ -111,6 +107,9 @@
 					<div class="header-row justify-content-between flex-row-reverse flex-lg-row">
 
 
+						<div id="primary-menu-trigger">
+							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+						</div>
 
 						<!-- Primary Navigation
 						============================================= -->
@@ -133,17 +132,17 @@
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="index.html">
+									<a class="menu-link" href="Equipement.html">
 										<div>Équipement</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="index.html">
+									<a class="menu-link" href="Devis.html">
 										<div>Devis</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="index.html">
+									<a class="menu-link" href="Contact.html">
 										<div>Contact</div>
 									</a>
 								</li>
@@ -159,15 +158,16 @@
 		</header><!-- #header end -->
 
 		<!-- Page Title
-		============================================= -->
-		<section id="page-title" class="page-title-parallax page-title-dark " style="padding: 250px 0; background-image: url('Imgs/containers.jpg'); background-size: cover; background-position: center center;" data-bottom-top="background-position:0px 400px;" data-top-bottom="background-position:0px -500px;">
+		============================================= -->		
+		<section id="page-title" class="page-title-parallax page-title-dark skrollable skrollable-between" style="background-image: url(&quot;Imgs/containers.jpg&quot;); background-size: cover; padding: 120px 0px; background-position: 0px -152.625px;" data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
 
 			<div class="container clearfix">
 				<h1>SERVICES</h1>
 				<span>Tout ce que vous devez savoir sur notre services</span>
 			</div>
 
-		</section><!-- #page-title end -->
+		</section>
+		<!-- #page-title end -->
 		<!-- Content
 		============================================= -->
 		<section id="content">
@@ -360,7 +360,16 @@
 				</div>
 			</div>
 		</section><!-- #content end -->
-
+		<div class="promo promo-dark promo-uppercase p-2 p-md-3">
+			<div class="row align-items-center">
+				<div class="col-lg-6" style="text-align: center;">
+					<h3>N'ATTENDS PLUS, demander un devis MAINTENANT!</h3>
+				</div>
+				<div class="col-lg-6 mt-4 mt-lg-0" style="text-align: center;">
+					<a href="#" class="btn btn-lg btn-outline-danger m-0"><span>demander un devis</span> </a>
+				</div>
+			</div>
+		</div>
 		<!-- Footer
 		============================================= -->
 		<footer id="footer" class="dark">
@@ -567,49 +576,7 @@
 	============================================= -->
 	<script src="js/functions.js"></script>
 
-	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
-	<script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-	<script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-	<script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-	<script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
-	<script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-	<script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
-	<script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
-	<script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-
-	<script>
-		var tpj = jQuery;
-		tpj.noConflict();
-		var $ = jQuery.noConflict();
-
-
-		tpj(document).ready(function () {
-			var apiRevoSlider = tpj('#rev_slider_k_fullwidth').show().revolution(
-				{
-					sliderType: "standard",
-					sliderLayout: "fullwidth",
-					delay: 9000,
-					navigation: {
-						arrows: { enable: true }
-					},
-					responsiveLevels: [1240, 1024, 778, 480],
-					visibilityLevels: [1240, 1024, 778, 480],
-					gridwidth: [1240, 1024, 778, 480],
-					gridheight: [600, 768, 960, 720],
-				});
-
-			apiRevoSlider.on("revolution.slide.onloaded", function (e) {
-				setTimeout(function () { SEMICOLON.slider.sliderDimensions(); }, 400);
-			});
-
-			apiRevoSlider.on("revolution.slide.onchange", function (e, data) {
-				SEMICOLON.slider.revolutionSliderMenu();
-			});
-		});
-	</script>
 </body>
 
 </html>
