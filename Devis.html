@@ -31,237 +31,8 @@
 	============================================= -->
 	<title>Devis | HighSpeed</title>
 
-	<style>
-		.revo-slider-emphasis-text {
-			font-size: 64px;
-			font-weight: 700;
-			letter-spacing: -1px;
-			font-family: 'Poppins', sans-serif;
-			padding: 15px 20px;
-			border-top: 2px solid #FFF;
-			border-bottom: 2px solid #FFF;
-		}
-
-		.revo-slider-desc-text {
-			font-size: 20px;
-			font-family: 'Lato', sans-serif;
-			width: 650px;
-			text-align: center;
-			line-height: 1.5;
-		}
-
-		.revo-slider-caps-text {
-			font-size: 16px;
-			font-weight: 400;
-			letter-spacing: 3px;
-			font-family: 'Poppins', sans-serif;
-		}
-
-		.tp-video-play-button {
-			display: none !important;
-		}
-
-		.tp-caption {
-			white-space: nowrap;
-		}
-	</style>
-	<!-- Custom Menu Styles -->
-	<style>
-		/* Enhanced Header Contact Info */
-		.header-extras li {
-			position: relative;
-			padding-left: 5px;
-		}
-
-		.header-extras li .he-text {
-			font-family: 'Poppins', sans-serif;
-			font-weight: 600;
-			color: #333;
-			letter-spacing: 0.5px;
-		}
-
-		.header-extras li .he-text span {
-			display: block;
-			font-family: 'Lato', sans-serif;
-			font-weight: 400;
-			color: #777;
-			margin-top: 2px;
-			font-size: 13px;
-		}
-
-		.header-extras li i {
-			color: #d12e2e !important;
-			/* Brand Color for icons */
-			font-size: 24px;
-			margin-right: 15px !important;
-			transition: transform 0.3s ease;
-		}
-
-		.header-extras li:hover i {
-			transform: scale(1.1);
-		}
-
-		/* Navigation Menu Improvements */
-		.menu-link {
-			font-family: 'Poppins', sans-serif;
-			font-weight: 600 !important;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			padding: 25px 15px !important;
-			color: #333;
-			position: relative;
-			transition: color 0.3s ease;
-		}
-
-		/* Hover Effect: Sliding Underline */
-		.menu-link::after {
-			content: '';
-			position: absolute;
-			bottom: 20px;
-			left: 50%;
-			width: 0;
-			height: 2px;
-			background-color: #d12e2e;
-			/* Brand Color */
-			transition: all 0.3s ease;
-			transform: translateX(-50%);
-		}
-
-		.menu-item:hover .menu-link::after,
-		.menu-item.current .menu-link::after {
-			width: 80%;
-		}
-
-		.menu-item:hover .menu-link {
-			color: #d12e2e;
-		}
-
-		/* Sticky Header Polish */
-		#header-wrap {
-			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-			/* Subtle shadow for depth */
-			background-color: #fff;
-		}
-
-		/* --- Mobile Optimization --- */
-		@media (max-width: 991.98px) {
-
-			/* Adjust Header Extras for Mobile */
-			.header-extras {
-				margin: 0 !important;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
-				padding-bottom: 5px;
-			}
-
-			.header-extras li {
-				margin-bottom: 5px;
-				padding: 0;
-				display: flex;
-				flex-direction: row;
-				align-items: flex-start;
-				justify-content: flex-start;
-				width: 280px;
-				max-width: 100%;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			.header-extras li i {
-				margin-right: 15px !important;
-				margin-bottom: 0;
-				font-size: 20px;
-				width: 25px;
-				text-align: center;
-				margin-top: 2px;
-				flex-shrink: 0;
-			}
-
-			.header-extras li .he-text {
-				text-align: left;
-			}
-
-			/* Responsive Logo Alignment */
-			#logo {
-				margin-right: 0 !important;
-				margin-bottom: 10px;
-				text-align: center;
-			}
-
-			#logo a.standard-logo {
-				display: inline-block;
-			}
-
-			/* Navigation Menu Mobile Styles */
-			.menu-link {
-				padding: 10px 5px !important;
-				border-bottom: 1px solid #f5f5f5;
-				text-align: center;
-				font-size: 13px !important;
-			}
-
-			/* Disable hover underline effect on mobile for cleaner look */
-			.menu-link::after {
-				display: none;
-			}
-
-			/* Active state background for mobile */
-			.menu-item.current .menu-link {
-				background-color: #f9f9f9;
-				color: #d12e2e;
-			}
-
-			/* Better spacing for container */
-			.header-row {
-				padding-top: 10px;
-				padding-bottom: 10px;
-			}
-
-			/* Mobile specific tweaks for the new grid */
-			.phone-grid {
-				align-items: flex-start;
-			}
-		}
-
-		/* --- New Phone Number UX Styling --- */
-		.phone-grid {
-			display: flex;
-			flex-direction: column;
-			gap: 2px;
-			margin-top: 2px;
-		}
-
-		.phone-link {
-			display: flex;
-			align-items: center;
-			font-family: 'Poppins', sans-serif;
-			font-size: 13px !important;
-			color: #555;
-			text-decoration: none !important;
-			transition: all 0.2s ease;
-			font-weight: 600;
-		}
-
-		.phone-link .p-label {
-			font-family: 'Lato', sans-serif;
-			font-weight: 400;
-			color: #999;
-			margin-right: 6px;
-			font-size: 11px;
-			text-transform: uppercase;
-		}
-
-		.phone-link:hover {
-			color: #d12e2e;
-			transform: translateX(3px);
-		}
-
-		.phone-link.primary-number {
-			/* slightly larger or bolder if needed */
-		}
-	</style>
+	
+	
 </head>
 
 <body class="stretched">
@@ -275,8 +46,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo" class="mr-0 mr-lg-auto">
-						<a href="index.html" class="standard-logo" data-dark-logo="Imgs/Logo/HighSpeed.png"><img
-								src="Imgs/Logo/HighSpeed.png" alt="Highspeed Logo"></a>
+						<a href="index.html" class="standard-logo" data-dark-logo="images/Logo/HighSpeed.png"><img
+								src="images/Logo/HighSpeed.png" alt="Highspeed Logo"></a>
 					</div><!-- #logo end -->
 
 					<div class="header-misc mb-4 mb-lg-0 order-lg-last">
@@ -334,27 +105,27 @@
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="Qui_Somme_Nous.html">
+									<a class="menu-link" href="qui-sommes-nous.html">
 										<div>Qui sommes-nous</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="Services.html">
+									<a class="menu-link" href="services.html">
 										<div>Services</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="Equipement.html">
+									<a class="menu-link" href="equipement.html">
 										<div>Équipement</div>
 									</a>
 								</li>
 								<li class="menu-item current">
-									<a class="menu-link" href="Devis.html">
+									<a class="menu-link" href="devis.html">
 										<div>Devis</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="Contact.html">
+									<a class="menu-link" href="contact.html">
 										<div>Contact</div>
 									</a>
 								</li>
@@ -372,7 +143,7 @@
 		<!-- Page Title
 		============================================= -->
 		<section id="page-title" class="page-title-parallax page-title-dark skrollable skrollable-between"
-			style="background-image: url(&quot;Imgs/TruckDevis.jpg&quot;); background-size: cover; padding: 120px 0px; background-position: 0px -152.625px;"
+			style="background-image: url(&quot;images/TruckDevis.jpg&quot;); background-size: cover; padding: 120px 0px; background-position: 0px -152.625px;"
 			data-bottom-top="background-position:0px 0px;" data-top-bottom="background-position:0px -300px;">
 
 			<div class="container clearfix">
@@ -455,7 +226,7 @@
 					<h3>N'ATTENDS PLUS, demander un devis MAINTENANT!</h3>
 				</div>
 				<div class="col-lg-6 mt-4 mt-lg-0" style="text-align: center;">
-					<a href="Devis.html" class="btn btn-lg btn-outline-danger m-0"><span>demander un devis</span> </a>
+					<a href="devis.html" class="btn btn-lg btn-outline-danger m-0"><span>demander un devis</span> </a>
 				</div>
 			</div>
 		</div>
@@ -679,3 +450,5 @@
 </body>
 
 </html>
+
+

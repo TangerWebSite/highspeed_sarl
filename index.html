@@ -5,9 +5,6 @@
 	<meta charset='utf-8'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-
-	<!-- Stylesheets
-	============================================= -->
 	<link
 		href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap"
 		rel="stylesheet" type="text/css" />
@@ -32,237 +29,7 @@
 	============================================= -->
 	<title>Page d'accueil | HighSpeed</title>
 
-	<style>
-		.revo-slider-emphasis-text {
-			font-size: 64px;
-			font-weight: 700;
-			letter-spacing: -1px;
-			font-family: 'Poppins', sans-serif;
-			padding: 15px 20px;
-			border-top: 2px solid #FFF;
-			border-bottom: 2px solid #FFF;
-		}
 
-		.revo-slider-desc-text {
-			font-size: 20px;
-			font-family: 'Lato', sans-serif;
-			width: 650px;
-			text-align: center;
-			line-height: 1.5;
-		}
-
-		.revo-slider-caps-text {
-			font-size: 16px;
-			font-weight: 400;
-			letter-spacing: 3px;
-			font-family: 'Poppins', sans-serif;
-		}
-
-		.tp-video-play-button {
-			display: none !important;
-		}
-
-		.tp-caption {
-			white-space: nowrap;
-		}
-	</style>
-	<!-- Custom Menu Styles -->
-	<style>
-		/* Enhanced Header Contact Info */
-		.header-extras li {
-			position: relative;
-			padding-left: 5px;
-		}
-
-		.header-extras li .he-text {
-			font-family: 'Poppins', sans-serif;
-			font-weight: 600;
-			color: #333;
-			letter-spacing: 0.5px;
-		}
-
-		.header-extras li .he-text span {
-			display: block;
-			font-family: 'Lato', sans-serif;
-			font-weight: 400;
-			color: #777;
-			margin-top: 2px;
-			font-size: 13px;
-		}
-
-		.header-extras li i {
-			color: #d12e2e !important;
-			/* Brand Color for icons */
-			font-size: 24px;
-			margin-right: 15px !important;
-			transition: transform 0.3s ease;
-		}
-
-		.header-extras li:hover i {
-			transform: scale(1.1);
-		}
-
-		/* Navigation Menu Improvements */
-		.menu-link {
-			font-family: 'Poppins', sans-serif;
-			font-weight: 600 !important;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			padding: 25px 15px !important;
-			color: #333;
-			position: relative;
-			transition: color 0.3s ease;
-		}
-
-		/* Hover Effect: Sliding Underline */
-		.menu-link::after {
-			content: '';
-			position: absolute;
-			bottom: 20px;
-			left: 50%;
-			width: 0;
-			height: 2px;
-			background-color: #d12e2e;
-			/* Brand Color */
-			transition: all 0.3s ease;
-			transform: translateX(-50%);
-		}
-
-		.menu-item:hover .menu-link::after,
-		.menu-item.current .menu-link::after {
-			width: 80%;
-		}
-
-		.menu-item:hover .menu-link {
-			color: #d12e2e;
-		}
-
-		/* Sticky Header Polish */
-		#header-wrap {
-			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-			/* Subtle shadow for depth */
-			background-color: #fff;
-		}
-
-		/* --- Mobile Optimization --- */
-		@media (max-width: 991.98px) {
-
-			/* Adjust Header Extras for Mobile */
-			.header-extras {
-				margin: 0 !important;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
-				padding-bottom: 5px;
-			}
-
-			.header-extras li {
-				margin-bottom: 5px;
-				padding: 0;
-				display: flex;
-				flex-direction: row;
-				align-items: flex-start;
-				justify-content: flex-start;
-				width: 280px;
-				max-width: 100%;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			.header-extras li i {
-				margin-right: 15px !important;
-				margin-bottom: 0;
-				font-size: 20px;
-				width: 25px;
-				text-align: center;
-				margin-top: 2px;
-				flex-shrink: 0;
-			}
-
-			.header-extras li .he-text {
-				text-align: left;
-			}
-
-			/* Responsive Logo Alignment */
-			#logo {
-				margin-right: 0 !important;
-				margin-bottom: 10px;
-				text-align: center;
-			}
-
-			#logo a.standard-logo {
-				display: inline-block;
-			}
-
-			/* Navigation Menu Mobile Styles */
-			.menu-link {
-				padding: 10px 5px !important;
-				border-bottom: 1px solid #f5f5f5;
-				text-align: center;
-				font-size: 13px !important;
-			}
-
-			/* Disable hover underline effect on mobile for cleaner look */
-			.menu-link::after {
-				display: none;
-			}
-
-			/* Active state background for mobile */
-			.menu-item.current .menu-link {
-				background-color: #f9f9f9;
-				color: #d12e2e;
-			}
-
-			/* Better spacing for container */
-			.header-row {
-				padding-top: 10px;
-				padding-bottom: 10px;
-			}
-
-			/* Mobile specific tweaks for the new grid */
-			.phone-grid {
-				align-items: flex-start;
-			}
-		}
-
-		/* --- New Phone Number UX Styling --- */
-		.phone-grid {
-			display: flex;
-			flex-direction: column;
-			gap: 2px;
-			margin-top: 2px;
-		}
-
-		.phone-link {
-			display: flex;
-			align-items: center;
-			font-family: 'Poppins', sans-serif;
-			font-size: 13px !important;
-			color: #555;
-			text-decoration: none !important;
-			transition: all 0.2s ease;
-			font-weight: 600;
-		}
-
-		.phone-link .p-label {
-			font-family: 'Lato', sans-serif;
-			font-weight: 400;
-			color: #999;
-			margin-right: 6px;
-			font-size: 11px;
-			text-transform: uppercase;
-		}
-
-		.phone-link:hover {
-			color: #d12e2e;
-			transform: translateX(3px);
-		}
-
-		.phone-link.primary-number {
-			/* slightly larger or bolder if needed */
-		}
-	</style>
 </head>
 
 <body class="stretched">
@@ -279,8 +46,8 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo" class="mr-0 mr-lg-auto">
-						<a href="index.html" class="standard-logo" data-dark-logo="Imgs/Logo/HighSpeed.png"><img
-								src="Imgs/Logo/HighSpeed.png" alt="Highspeed Logo"></a>
+						<a href="index.html" class="standard-logo" data-dark-logo="images/Logo/HighSpeed.png"><img
+								src="images/Logo/HighSpeed.png" alt="Highspeed Logo"></a>
 					</div><!-- #logo end -->
 
 					<div class="header-misc mb-4 mb-lg-0 order-lg-last">
@@ -338,27 +105,27 @@
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="Qui_Somme_Nous.html">
+									<a class="menu-link" href="qui-sommes-nous.html">
 										<div>Qui sommes-nous</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="Services.html">
+									<a class="menu-link" href="services.html">
 										<div>Services</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="Equipement.html">
+									<a class="menu-link" href="equipement.html">
 										<div>Équipement</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="Devis.html">
+									<a class="menu-link" href="devis.html">
 										<div>Devis</div>
 									</a>
 								</li>
 								<li class="menu-item">
-									<a class="menu-link" href="Contact.html">
+									<a class="menu-link" href="contact.html">
 										<div>Contact</div>
 									</a>
 								</li>
@@ -391,10 +158,10 @@
 						<ul>
 							<!-- SLIDE  -->
 							<li class="dark" data-transition="fade" data-slotamount="1"
-								data-thumb="Imgs/Videos/truck.png" data-masterspeed="1500" data-delay="15000"
+								data-thumb="images/Videos/truck.png" data-masterspeed="1500" data-delay="15000"
 								data-saveperformance="off" data-title="Unlimited Possibilities">
 								<!-- MAIN IMAGE -->
-								<img src="Imgs/Videos/truck.png" alt="kenburns6" data-bgposition="center bottom"
+								<img src="images/Videos/truck.png" alt="kenburns6" data-bgposition="center bottom"
 									data-bgpositionend="center top" data-kenburns="on" data-duration="25000"
 									data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="140"
 									data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
@@ -403,7 +170,7 @@
 								<!-- LAYER NR. 1 -->
 								<div class="tp-fade fadeout fullscreenvideo rs-background-video-layer"
 									data-forcerewind="on" data-volume="mute" data-videowidth="100%"
-									data-videoheight="100%" data-videomp4="Imgs/videos/Truck.mp4"
+									data-videoheight="100%" data-videomp4="images/videos/Truck.mp4"
 									data-videopreload="preload" data-videoloop="none" data-forceCover="1"
 									data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false"
 									data-nextslideatend="true">
@@ -433,12 +200,13 @@
 
 							</li>
 
-							<li class="dark" data-transition="zoomout" data-thumb="Imgs/Slides/Slide6.jpg"
+							<li class="dark" data-transition="zoomout" data-thumb="images/Slides/Slide6.jpg"
 								data-slotamount="1" data-masterspeed="1500" data-saveperformance="off"
 								data-title="Fixed-Size Video">
 								<!-- MAIN IMAGE -->
-								<img src="Imgs/Slides/Slide6.jpg" alt="citybg" data-lazyload="Imgs/Slides/Slide6.jpg"
-									data-bgposition="center top" data-scale="cover" data-bgrepeat="no-repeat">
+								<img src="images/Slides/Slide6.jpg" alt="citybg"
+									data-lazyload="images/Slides/Slide6.jpg" data-bgposition="center top"
+									data-scale="cover" data-bgrepeat="no-repeat">
 								<!-- LAYERS -->
 
 								<!-- LAYER NR. 1 -->
@@ -471,10 +239,10 @@
 
 							</li>
 							<li class="dark" data-transition="zoomout" data-slotamount="1" data-masterspeed="1500"
-								data-thumb="Imgs/Slides/Slide3.jpg" data-saveperformance="off"
+								data-thumb="images/Slides/Slide3.jpg" data-saveperformance="off"
 								data-title="Fixed-Size Video">
 								<!-- MAIN IMAGE -->
-								<img src="Imgs/Slides/Slide3.jpg" alt="kenburns6" data-bgposition="left bottom"
+								<img src="images/Slides/Slide3.jpg" alt="kenburns6" data-bgposition="left bottom"
 									data-bgpositionend="right top" data-kenburns="on" data-duration="20000"
 									data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120"
 									data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
@@ -515,7 +283,7 @@
 					<h3>N'ATTENDS PLUS, demander un devis MAINTENANT!</h3>
 				</div>
 				<div class="col-lg-6 mt-4 mt-lg-0" style="text-align: center;">
-					<a href="Devis.html" class="btn btn-lg btn-outline-danger m-0"><span>demander un devis</span> </a>
+					<a href="devis.html" class="btn btn-lg btn-outline-danger m-0"><span>demander un devis</span> </a>
 				</div>
 			</div>
 		</div>
@@ -527,7 +295,7 @@
 				<div class="container clearfix">
 
 					<div class="mx-auto center clearfix" style="max-width: 900px;">
-						<img class="bottommargin" src="Imgs/Logo/HighSpeed.png" alt="Image" style="width: 150px;">
+						<img class="bottommargin" src="images/Logo/HighSpeed.png" alt="Image" style="width: 150px;">
 						<h1>Produits & <span>Services</span>.</h1>
 					</div>
 					<div class="line" style="margin-top: 30px;margin-bottom: 30px;"></div>
@@ -622,7 +390,7 @@
 				<div class="clear"></div>
 
 				<div class="section parallax dark mb-0 border-bottom-0"
-					style="background-image: url('Imgs/Harbor.jpg');background-size: cover;">
+					style="background-image: url('images/Harbor.jpg');background-size: cover;">
 
 					<div class="container clearfix">
 
@@ -637,7 +405,7 @@
 
 						<div style="position: relative; margin-bottom: -60px;" data-height-xl="415" data-height-lg="342"
 							data-height-md="262" data-height-sm="160" data-height-xs="102">
-							<img src="Imgs/Trucks.png" style="position: absolute; top: 0; left: 0;"
+							<img src="images/Trucks.png" style="position: absolute; top: 0; left: 0;"
 								data-animate="fadeInUp" alt="Chrome">
 						</div>
 
