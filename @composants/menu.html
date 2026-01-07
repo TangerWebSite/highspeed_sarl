@@ -105,6 +105,124 @@
             /* Subtle shadow for depth */
             background-color: #fff;
         }
+
+        /* --- Mobile Optimization --- */
+        @media (max-width: 991.98px) {
+
+            /* Adjust Header Extras for Mobile */
+            .header-extras {
+                margin: 0 !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            .header-extras li {
+                margin-bottom: 15px;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 280px;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .header-extras li i {
+                margin-right: 15px !important;
+                margin-bottom: 0;
+                font-size: 20px;
+                width: 25px;
+                text-align: center;
+                margin-top: 2px;
+                flex-shrink: 0;
+            }
+
+            .header-extras li .he-text {
+                text-align: left;
+            }
+
+            /* Responsive Logo Alignment */
+            #logo {
+                margin-right: 0 !important;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            #logo a.standard-logo {
+                display: inline-block;
+            }
+
+            /* Navigation Menu Mobile Styles */
+            .menu-link {
+                padding: 15px 10px !important;
+                border-bottom: 1px solid #f5f5f5;
+                text-align: center;
+            }
+
+            /* Disable hover underline effect on mobile for cleaner look */
+            .menu-link::after {
+                display: none;
+            }
+
+            /* Active state background for mobile */
+            .menu-item.current .menu-link {
+                background-color: #f9f9f9;
+                color: #d12e2e;
+            }
+
+            /* Better spacing for container */
+            .header-row {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            /* Mobile specific tweaks for the new grid */
+            .phone-grid {
+                align-items: flex-start;
+            }
+        }
+
+        /* --- New Phone Number UX Styling --- */
+        .phone-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            margin-top: 2px;
+        }
+
+        .phone-link {
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px !important;
+            color: #555;
+            text-decoration: none !important;
+            transition: all 0.2s ease;
+            font-weight: 600;
+        }
+
+        .phone-link .p-label {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #999;
+            margin-right: 6px;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        .phone-link:hover {
+            color: #d12e2e;
+            transform: translateX(3px);
+        }
+
+        .phone-link.primary-number {
+            /* slightly larger or bolder if needed */
+        }
     </style>
 
     <!-- Document Title
@@ -144,8 +262,14 @@
                             <li>
                                 <i class="i-plain icon-call m-0"></i>
                                 <div class="he-text">
-                                    Contactez-nous
-                                    <span>0660533996 / 0644514166</span>
+                                    <div class="phone-grid">
+                                        <a href="tel:0660533996" class="phone-link primary-number">
+                                            <span class="p-label">Principal:</span> 06 60 53 39 96
+                                        </a>
+                                        <a href="tel:0644514166" class="phone-link secondary-number">
+                                            <span class="p-label">Support:</span> 06 44 51 41 66
+                                        </a>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
