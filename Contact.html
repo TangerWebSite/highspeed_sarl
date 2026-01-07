@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -60,6 +60,203 @@
 			white-space: nowrap;
 		}
 	</style>
+	<!-- Custom Menu Styles -->
+	<style>
+		/* Enhanced Header Contact Info */
+		.header-extras li {
+			position: relative;
+			padding-left: 5px;
+		}
+
+		.header-extras li .he-text {
+			font-family: 'Poppins', sans-serif;
+			font-weight: 600;
+			color: #333;
+			letter-spacing: 0.5px;
+		}
+
+		.header-extras li .he-text span {
+			display: block;
+			font-family: 'Lato', sans-serif;
+			font-weight: 400;
+			color: #777;
+			margin-top: 2px;
+			font-size: 13px;
+		}
+
+		.header-extras li i {
+			color: #d12e2e !important;
+			/* Brand Color for icons */
+			font-size: 24px;
+			margin-right: 15px !important;
+			transition: transform 0.3s ease;
+		}
+
+		.header-extras li:hover i {
+			transform: scale(1.1);
+		}
+
+		/* Navigation Menu Improvements */
+		.menu-link {
+			font-family: 'Poppins', sans-serif;
+			font-weight: 600 !important;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding: 25px 15px !important;
+			color: #333;
+			position: relative;
+			transition: color 0.3s ease;
+		}
+
+		/* Hover Effect: Sliding Underline */
+		.menu-link::after {
+			content: '';
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			width: 0;
+			height: 2px;
+			background-color: #d12e2e;
+			/* Brand Color */
+			transition: all 0.3s ease;
+			transform: translateX(-50%);
+		}
+
+		.menu-item:hover .menu-link::after,
+		.menu-item.current .menu-link::after {
+			width: 80%;
+		}
+
+		.menu-item:hover .menu-link {
+			color: #d12e2e;
+		}
+
+		/* Sticky Header Polish */
+		#header-wrap {
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+			/* Subtle shadow for depth */
+			background-color: #fff;
+		}
+
+		/* --- Mobile Optimization --- */
+		@media (max-width: 991.98px) {
+
+			/* Adjust Header Extras for Mobile */
+			.header-extras {
+				margin: 0 !important;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				padding-bottom: 5px;
+			}
+
+			.header-extras li {
+				margin-bottom: 5px;
+				padding: 0;
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				justify-content: flex-start;
+				width: 280px;
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.header-extras li i {
+				margin-right: 15px !important;
+				margin-bottom: 0;
+				font-size: 20px;
+				width: 25px;
+				text-align: center;
+				margin-top: 2px;
+				flex-shrink: 0;
+			}
+
+			.header-extras li .he-text {
+				text-align: left;
+			}
+
+			/* Responsive Logo Alignment */
+			#logo {
+				margin-right: 0 !important;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+			#logo a.standard-logo {
+				display: inline-block;
+			}
+
+			/* Navigation Menu Mobile Styles */
+			.menu-link {
+				padding: 10px 5px !important;
+				border-bottom: 1px solid #f5f5f5;
+				text-align: center;
+				font-size: 13px !important;
+			}
+
+			/* Disable hover underline effect on mobile for cleaner look */
+			.menu-link::after {
+				display: none;
+			}
+
+			/* Active state background for mobile */
+			.menu-item.current .menu-link {
+				background-color: #f9f9f9;
+				color: #d12e2e;
+			}
+
+			/* Better spacing for container */
+			.header-row {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			/* Mobile specific tweaks for the new grid */
+			.phone-grid {
+				align-items: flex-start;
+			}
+		}
+
+		/* --- New Phone Number UX Styling --- */
+		.phone-grid {
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+			margin-top: 2px;
+		}
+
+		.phone-link {
+			display: flex;
+			align-items: center;
+			font-family: 'Poppins', sans-serif;
+			font-size: 13px !important;
+			color: #555;
+			text-decoration: none !important;
+			transition: all 0.2s ease;
+			font-weight: 600;
+		}
+
+		.phone-link .p-label {
+			font-family: 'Lato', sans-serif;
+			font-weight: 400;
+			color: #999;
+			margin-right: 6px;
+			font-size: 11px;
+			text-transform: uppercase;
+		}
+
+		.phone-link:hover {
+			color: #d12e2e;
+			transform: translateX(3px);
+		}
+
+		.phone-link.primary-number {
+			/* slightly larger or bolder if needed */
+		}
+	</style>
 </head>
 
 <body class="stretched">
@@ -90,8 +287,14 @@
 							<li>
 								<i class="i-plain icon-call m-0"></i>
 								<div class="he-text">
-									Contactez-nous
-									<span>0660533996 / 0644514166</span>
+									<div class="phone-grid">
+										<a href="tel:0660533996" class="phone-link primary-number">
+											<span class="p-label">Principal:</span> 06 60 53 39 96
+										</a>
+										<a href="tel:0644514166" class="phone-link secondary-number">
+											<span class="p-label">Support:</span> 06 44 51 41 66
+										</a>
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -103,8 +306,6 @@
 			<div id="header-wrap" class="border-top border-f5">
 				<div class="container">
 					<div class="header-row justify-content-between flex-row-reverse flex-lg-row">
-
-
 						<div id="primary-menu-trigger">
 							<svg class="svg-trigger" viewBox="0 0 100 100">
 								<path
@@ -147,7 +348,7 @@
 										<div>Devis</div>
 									</a>
 								</li>
-								<li class="menu-item">
+								<li class="menu-item current">
 									<a class="menu-link" href="Contact.html">
 										<div>Contact</div>
 									</a>
@@ -205,7 +406,8 @@
 										</div>
 										<div class="fbox-content">
 											<h3>Par Téléphone</h3>
-											<p>Une urgence ou une question rapide ?<br>Notre équipe est à votre écoute.
+											<p>Une urgence ou une question rapide ?<br>Notre équipe est à votre
+												écoute.
 											</p>
 											<a href="tel:0660533996"
 												class="button button-small button-circle button-border button-dark">Appeler</a>
@@ -235,7 +437,7 @@
 										</div>
 										<div class="fbox-content">
 											<h3>Nos Bureaux</h3>
-											<p>Rue Jordanie, Résidence Yamna, 6ème Étage, N° 81, Tanger</p>
+											<p>Rue Jordanie, Résidence Yamna, 6ème Étage, NÂ° 81, Tanger</p>
 										</div>
 									</div>
 								</div>
@@ -251,7 +453,7 @@
 							<address>
 								<strong>HighSpeed:</strong><br>
 								Rue Jordanie, Résidence Yamna,<br>
-								6ème Étage, N° 81, Tanger<br>
+								6ème Étage, NÂ° 81, Tanger<br>
 							</address>
 							<abbr title="Phone Number"><strong>téléphone:</strong></abbr> 0660533996 / +212
 							644-514166<br>
@@ -350,7 +552,7 @@
 											<address>
 												<strong>Nous sommes ici !</strong><br>
 												Rue Jordanie, Résidence Yamna,<br>
-												6ème Étage, N° 81, Tanger<br>
+												6ème Étage, NÂ° 81, Tanger<br>
 											</address>
 											<abbr title="Phone Number"><strong>Téléphone:</strong></abbr> 0660533996 /
 											0644514166<br>

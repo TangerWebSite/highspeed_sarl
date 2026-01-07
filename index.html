@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -66,6 +66,203 @@
 			white-space: nowrap;
 		}
 	</style>
+	<!-- Custom Menu Styles -->
+	<style>
+		/* Enhanced Header Contact Info */
+		.header-extras li {
+			position: relative;
+			padding-left: 5px;
+		}
+
+		.header-extras li .he-text {
+			font-family: 'Poppins', sans-serif;
+			font-weight: 600;
+			color: #333;
+			letter-spacing: 0.5px;
+		}
+
+		.header-extras li .he-text span {
+			display: block;
+			font-family: 'Lato', sans-serif;
+			font-weight: 400;
+			color: #777;
+			margin-top: 2px;
+			font-size: 13px;
+		}
+
+		.header-extras li i {
+			color: #d12e2e !important;
+			/* Brand Color for icons */
+			font-size: 24px;
+			margin-right: 15px !important;
+			transition: transform 0.3s ease;
+		}
+
+		.header-extras li:hover i {
+			transform: scale(1.1);
+		}
+
+		/* Navigation Menu Improvements */
+		.menu-link {
+			font-family: 'Poppins', sans-serif;
+			font-weight: 600 !important;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding: 25px 15px !important;
+			color: #333;
+			position: relative;
+			transition: color 0.3s ease;
+		}
+
+		/* Hover Effect: Sliding Underline */
+		.menu-link::after {
+			content: '';
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			width: 0;
+			height: 2px;
+			background-color: #d12e2e;
+			/* Brand Color */
+			transition: all 0.3s ease;
+			transform: translateX(-50%);
+		}
+
+		.menu-item:hover .menu-link::after,
+		.menu-item.current .menu-link::after {
+			width: 80%;
+		}
+
+		.menu-item:hover .menu-link {
+			color: #d12e2e;
+		}
+
+		/* Sticky Header Polish */
+		#header-wrap {
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+			/* Subtle shadow for depth */
+			background-color: #fff;
+		}
+
+		/* --- Mobile Optimization --- */
+		@media (max-width: 991.98px) {
+
+			/* Adjust Header Extras for Mobile */
+			.header-extras {
+				margin: 0 !important;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				padding-bottom: 5px;
+			}
+
+			.header-extras li {
+				margin-bottom: 5px;
+				padding: 0;
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				justify-content: flex-start;
+				width: 280px;
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.header-extras li i {
+				margin-right: 15px !important;
+				margin-bottom: 0;
+				font-size: 20px;
+				width: 25px;
+				text-align: center;
+				margin-top: 2px;
+				flex-shrink: 0;
+			}
+
+			.header-extras li .he-text {
+				text-align: left;
+			}
+
+			/* Responsive Logo Alignment */
+			#logo {
+				margin-right: 0 !important;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+
+			#logo a.standard-logo {
+				display: inline-block;
+			}
+
+			/* Navigation Menu Mobile Styles */
+			.menu-link {
+				padding: 10px 5px !important;
+				border-bottom: 1px solid #f5f5f5;
+				text-align: center;
+				font-size: 13px !important;
+			}
+
+			/* Disable hover underline effect on mobile for cleaner look */
+			.menu-link::after {
+				display: none;
+			}
+
+			/* Active state background for mobile */
+			.menu-item.current .menu-link {
+				background-color: #f9f9f9;
+				color: #d12e2e;
+			}
+
+			/* Better spacing for container */
+			.header-row {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			/* Mobile specific tweaks for the new grid */
+			.phone-grid {
+				align-items: flex-start;
+			}
+		}
+
+		/* --- New Phone Number UX Styling --- */
+		.phone-grid {
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+			margin-top: 2px;
+		}
+
+		.phone-link {
+			display: flex;
+			align-items: center;
+			font-family: 'Poppins', sans-serif;
+			font-size: 13px !important;
+			color: #555;
+			text-decoration: none !important;
+			transition: all 0.2s ease;
+			font-weight: 600;
+		}
+
+		.phone-link .p-label {
+			font-family: 'Lato', sans-serif;
+			font-weight: 400;
+			color: #999;
+			margin-right: 6px;
+			font-size: 11px;
+			text-transform: uppercase;
+		}
+
+		.phone-link:hover {
+			color: #d12e2e;
+			transform: translateX(3px);
+		}
+
+		.phone-link.primary-number {
+			/* slightly larger or bolder if needed */
+		}
+	</style>
 </head>
 
 <body class="stretched">
@@ -99,8 +296,14 @@
 							<li>
 								<i class="i-plain icon-call m-0"></i>
 								<div class="he-text">
-									Contactez-nous
-									<span>0660533996 / 0644514166</span>
+									<div class="phone-grid">
+										<a href="tel:0660533996" class="phone-link primary-number">
+											<span class="p-label">Principal:</span> 06 60 53 39 96
+										</a>
+										<a href="tel:0644514166" class="phone-link secondary-number">
+											<span class="p-label">Support:</span> 06 44 51 41 66
+										</a>
+									</div>
 								</div>
 							</li>
 						</ul>
@@ -129,7 +332,7 @@
 						<nav class="primary-menu">
 
 							<ul class="menu-container">
-								<li class="menu-item">
+								<li class="menu-item current">
 									<a class="menu-link" href="index.html">
 										<div>Accueil</div>
 									</a>
@@ -224,7 +427,8 @@
 									data-endelementdelay="0.1" data-endspeed="1000" data-textAlign="center"
 									data-endeasing="Power4.easeIn"
 									style="z-index: 3; color: #FFF; max-width: 650px; white-space: normal;">Votre
-									meilleur allié pour le pilotage et l’organisation de vos transports au Maroc et à
+									meilleur allié pour le pilotage et l’organisation de vos transports au Maroc et
+									à
 									l’international.</div>
 
 							</li>
@@ -257,8 +461,10 @@
 									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"
 									data-endspeed="1000" data-endeasing="Power4.easeIn"
 									style="max-width: 550px; white-space: normal;">HighSpeed est spécialisée dans le
-									transport de marchandises au Maroc et à l’International. Depuis sa création, elle a
-									réussi une croissance constante, grâce à son positionnement stratégique à Tanger,
+									transport de marchandises au Maroc et à l’International. Depuis sa création,
+									elle a
+									réussi une croissance constante, grâce à son positionnement stratégique à
+									Tanger,
 									aux portes de l’Europe et du Maghreb, et à son souci permanent d’un service de
 									qualité.
 								</div>
@@ -334,7 +540,8 @@
 								<div class="fbox-content">
 									<h3>Transport routier</h3>
 									<p>Le transport routier de lots complets et la commission en transport
-										international, notre expertise multi-métiers nous permet de répondre à tous les
+										international, notre expertise multi-métiers nous permet de répondre à tous
+										les
 										besoins des clients.</p>
 								</div>
 							</div>
@@ -347,7 +554,8 @@
 								</div>
 								<div class="fbox-content">
 									<h3>Transport urgent</h3>
-									<p>Notre compétence va du véhicule léger ( 3 m3 ) au fourgon ( 20 m3 ) ou camion (
+									<p>Notre compétence va du véhicule léger ( 3 m3 ) au fourgon ( 20 m3 ) ou camion
+										(
 										34 m3 ) pour toute expédition nationale et internationale.</p>
 								</div>
 							</div>
@@ -362,7 +570,8 @@
 									<h3>Bagages accompagnés</h3>
 									<p>Certaines urgences ne souffrent aucun retard. La notion de délai devient vitale
 										(impératif de production, fin de stock, engagements contractuels, affaires à
-										conclure, clients à satisfaire, machines en panne, prototype à valider ...).</p>
+										conclure, clients à satisfaire, machines en panne, prototype à valider ...).
+									</p>
 								</div>
 							</div>
 						</div>
@@ -400,7 +609,8 @@
 								</div>
 								<div class="fbox-content">
 									<h3>Déménagement, Particulier ou entreprise</h3>
-									<p>Sur base de votre besoin, nous vous proposons une formule parfaitement adaptée à
+									<p>Sur base de votre besoin, nous vous proposons une formule parfaitement adaptée
+										à
 										vos budgets de déménagement.</p>
 								</div>
 							</div>
@@ -420,7 +630,8 @@
 							<h2>Simplifiez vos expéditions!</h2>
 							<p>En fonction de vos problématiques de transport, nos spécialistes vous présenteront des
 								solutions sur mesure et vous proposeront un processus de commande simplifié, ainsi
-								qu’une livraison fiable et réactive. Avec HighSpeed, le transport express ne vous aura
+								qu’une livraison fiable et réactive. Avec HighSpeed, le transport express ne vous
+								aura
 								jamais paru aussi facile.</p>
 						</div>
 
@@ -528,7 +739,7 @@
 											<address>
 												<strong>Nous sommes ici !</strong><br>
 												Rue Jordanie, Résidence Yamna,<br>
-												6ème Étage, N° 81, Tanger<br>
+												6ème Étage, NÂ° 81, Tanger<br>
 											</address>
 											<abbr title="Phone Number"><strong>Téléphone:</strong></abbr> 0660533996 /
 											0644514166<br>
